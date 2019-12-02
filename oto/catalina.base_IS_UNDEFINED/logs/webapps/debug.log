@@ -1,0 +1,83 @@
+2019-10-31 13:52:03.642 [main] DEBUG com.henu.oto.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2019-10-31 13:52:03.692 [main] DEBUG com.henu.oto.dao.AreaDao.queryArea - ==> Parameters: 
+2019-10-31 13:52:04.012 [main] DEBUG com.henu.oto.dao.AreaDao.queryArea - <==      Total: 3
+2019-10-31 15:39:47.656 [main] DEBUG com.henu.oto.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2019-10-31 15:39:47.686 [main] DEBUG com.henu.oto.dao.AreaDao.queryArea - ==> Parameters: 
+2019-10-31 15:39:48.106 [main] DEBUG com.henu.oto.dao.AreaDao.queryArea - <==      Total: 3
+2019-10-31 15:40:28.110 [main] DEBUG com.henu.oto.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2019-10-31 15:40:28.150 [main] DEBUG com.henu.oto.dao.AreaDao.queryArea - ==> Parameters: 
+2019-10-31 15:40:28.200 [main] DEBUG com.henu.oto.dao.AreaDao.queryArea - <==      Total: 3
+2019-10-31 17:24:24.614 [main] DEBUG com.henu.oto.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: INSERT INTO tb_local_auth(username,password,user_id,create_time,last_edit_time) VALUES (?,?,?,?,?) 
+2019-10-31 17:24:24.668 [main] DEBUG com.henu.oto.dao.LocalAuthDao.insertLocalAuth - ==> Parameters: testussername(String), testpassword(String), 1(Long), 2019-10-31 17:24:23.925(Timestamp), null
+2019-10-31 17:24:24.984 [main] DEBUG com.henu.oto.dao.LocalAuthDao.insertLocalAuth - <==    Updates: 1
+2019-10-31 17:24:25.115 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-10-31 17:24:25.115 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testussername(String), testpassword(String)
+2019-10-31 17:24:25.126 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2019-10-31 17:24:25.140 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-10-31 17:24:25.141 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-10-31 17:24:25.187 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2019-10-31 17:24:25.221 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 17:24:25.222 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: testpasswordnew(String), 2019-10-31 17:24:25.191(Timestamp), 1(Long), testussername(String), testpassword(String)
+2019-10-31 17:24:25.295 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 1
+2019-10-31 17:24:25.296 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-10-31 17:24:25.296 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-10-31 17:24:25.299 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2019-10-31 17:25:26.131 [main] DEBUG com.henu.oto.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: INSERT INTO tb_local_auth(username,password,user_id,create_time,last_edit_time) VALUES (?,?,?,?,?) 
+2019-10-31 17:25:26.226 [main] DEBUG com.henu.oto.dao.LocalAuthDao.insertLocalAuth - ==> Parameters: testussername(String), testpassword(String), 1(Long), 2019-10-31 17:25:25.67(Timestamp), null
+2019-10-31 17:25:26.540 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-10-31 17:25:26.540 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testussername(String), testpassword(String)
+2019-10-31 17:25:26.554 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 0
+2019-10-31 17:25:26.557 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-10-31 17:25:26.558 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-10-31 17:25:26.567 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2019-10-31 17:25:26.604 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 17:25:26.605 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: testpasswordnew(String), 2019-10-31 17:25:26.569(Timestamp), 1(Long), testussername(String), testpassword(String)
+2019-10-31 17:25:26.607 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 0
+2019-10-31 17:55:17.436 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-10-31 17:55:17.463 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-10-31 17:55:17.495 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2019-10-31 17:56:00.244 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-10-31 17:56:00.295 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-10-31 17:56:00.339 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 0
+2019-10-31 17:56:00.350 [main] DEBUG com.henu.oto.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: INSERT INTO tb_local_auth(username,password,user_id,create_time,last_edit_time) VALUES (?,?,?,?,?) 
+2019-10-31 17:56:00.359 [main] DEBUG com.henu.oto.dao.LocalAuthDao.insertLocalAuth - ==> Parameters: testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String), 1(Long), 2019-10-31 17:56:00.349(Timestamp), 2019-10-31 17:56:00.349(Timestamp)
+2019-10-31 17:56:00.362 [main] DEBUG com.henu.oto.dao.LocalAuthDao.insertLocalAuth - <==    Updates: 1
+2019-10-31 17:56:00.497 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-10-31 17:56:00.498 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-10-31 17:56:00.504 [main] DEBUG com.henu.oto.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2019-10-31 18:00:16.452 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 18:00:16.488 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-10-31 18:00:16.358(Timestamp), 1(Long), testname(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-10-31 18:00:16.492 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 0
+2019-10-31 18:01:25.518 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 18:01:25.562 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-10-31 18:01:25.433(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-10-31 18:01:25.582 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 1
+2019-10-31 18:01:25.722 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-10-31 18:01:25.722 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-10-31 18:01:25.806 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 0
+2019-10-31 18:50:49.485 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 18:50:49.537 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-10-31 18:50:49.404(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-10-31 18:50:49.720 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 0
+2019-10-31 18:52:24.866 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 18:52:24.900 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-10-31 18:52:24.751(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-10-31 18:52:24.914 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 0
+2019-10-31 18:55:16.686 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 18:55:16.728 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-10-31 18:55:16.581(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-10-31 18:55:16.736 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 0
+2019-10-31 18:57:47.802 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 18:57:47.852 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-10-31 18:57:47.61(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-10-31 18:57:47.854 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 0
+2019-10-31 19:13:02.215 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 19:13:02.248 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-10-31 19:13:02.115(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-10-31 19:13:02.256 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 0
+2019-10-31 19:15:19.806 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 19:15:19.836 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-10-31 19:15:19.751(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-10-31 19:15:19.841 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 0
+2019-10-31 19:21:54.265 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 19:21:54.315 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-10-31 19:21:45.066(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-10-31 19:21:54.318 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 0
+2019-10-31 19:23:39.008 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-10-31 19:23:39.038 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-10-31 19:23:38.924(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-10-31 19:23:39.058 [main] DEBUG com.henu.oto.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 1
+2019-10-31 19:23:39.189 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-10-31 19:23:39.189 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testusername(String), 6559sq606y6l92e9ss5qsqb5q92e566b(String)
+2019-10-31 19:23:39.262 [main] DEBUG c.h.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
